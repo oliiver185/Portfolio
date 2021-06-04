@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #34495e;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#titulo h1 {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: white;
+}
+
+#imagen {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+    text-align: center;
+}
+
+.cuadros {
+    background-color: black;
+    height: 200px;
+    width: 301px;
+    margin-top: 86px;
+    position: absolute;
+    text-align: center;
+}
+
+.cuadroTransparente {
+    background-color: transparent;
+    height: 200px;
+    width: 301px;
+    margin-top: 86px;
+    position: absolute;
+    text-align: center;
+}
+
+#lives {
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    color: white;
+}
+
+.hiddentext {
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+
+.imagesize {
+    width: 300px;
+    height: 300px;
+    /* margin-inline: auto;
+    align-content: center;
+    margin-top: 40px; */
+    /* position: absolute; */
+}
+
+
+/* input {
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+} */
+
+button {
+    margin: 5px;
+}
+
+#buttons {
+    /* position: relative; */
+    margin-top: 50px;
+    text-align: center;
+    border-color: black solid 1px;
+    border-color: black;
+    /* width: 100%; */
+}
+
+.teclado .keyboard {
+    width: 45px;
+    /* background-color: rgb(86, 167, 86); */
+    background-color: #28a745;
+    cursor: pointer;
+    border: 0;
+    padding: 14px 14px;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    border-radius: 5px;
+}
+
+#letraA,
+#letraE,
+#letraI,
+#letraO,
+#letraU {
+    background-color: #ffc107;
+    color: black;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.popup button:active {
+    transform: scale(0.98);
+}
+
+.popup button:focus {
+    outline: 0;
+}
+
+#btn-close {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+
+/* h2 {
+    border-radius: 50%;
+    border-color: solid 1px black;
+    background-color: black;
+    color: white;
+} */
