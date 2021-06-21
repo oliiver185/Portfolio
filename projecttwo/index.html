@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCMI Band</title>
+    <script src="https://kit.fontawesome.com/4854e0d380.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header secction -->
+
+    <section class="header">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i onclick="myFunction(this)" class="fas fa-bars"></i>
+            </label>
+            <img id="logo" src="images/sound_waves.ico" alt="">
+            <!-- made  title="Kiranshastry">Kiranshastry< href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com -->
+            <ul id="myDIV">
+                <li><a class="btn active" href="#">Home</a></li>
+                <li><a class="btn" href="#about">About</a></li>
+                <li><a class="btn" href="#discography">Discography</a></li>
+                <li><a class="btn" href="#gallery">Gallery</a></li>
+                <li><a class="btn" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"></div> -->
+            <img src="images/band.jpg" style="width:100%; ">
+            <div class="text">
+                <h2>TCMI music band</h2> <br>
+                <p> New single coming soon available this autumn</p>
+                <button></button>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"></div> -->
+            <img src="images/dominik-scythe-cJmTXUAUBGc-unsplash(1).jpg" style="width:100%">
+            <div class="text">
+                <h2>Enjoy our music</h2>
+            </div>
+        </div>
+        <div style="text-align: center; ">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- <span class="dot"></span> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </section>
+
+
+
+    <!-- about section -->
+
+    <section id="about">
+        <div class="contenedor">
+            <div class="slider-contenedor ">
+                <section class="contenido-slider">
+                    <div>
+                        <h2>TCMI</h2>
+                        <p>Mix up some Country, Americana and a bit Rock N Roll and you get Tom Can't Make It complete with 3 part harmonies.</p>
+                        <a href="#contact">contact us</a>
+                    </div>
+                    <img src="images/dickjenkins.jpg" alt=" ">
+                </section>
+                <section class="contenido-slider ">
+                    <div>
+                        <h2>Just One Thing</h2>
+                        <p>The latest song, recorded on my little fist-sized machine. Big sadness when it breaks down for your friends.</p>
+                        <a id="play-song" href="#play-intro"><i class="fas fa-play"></i></a>
+                    </div>
+                    <img src="images/vinyl.png" alt=" ">
+                </section>
+                <!-- <section class="contenido-slider ">
+                    <div>
+                        <h2>Upcoming event</h2>
+                        <a id="upcomingevent" href="#upcoming-event"><i class="fas fa-arrow-down"></i></a>
+                    </div>
+                    <img src="images/djenkins.jpg" alt=" ">
+                </section> -->
+                <section class="contenido-slider ">
+                    <div>
+                        <h2>TCMI</h2>
+                        <p>Mix up some Country, Americana and a bit Rock N Roll and you get Tom Can't Make It complete with 3 part harmonies.</p>
+                        <a href="#contact">contact us</a>
+                    </div>
+                    <img src="images/dickjenkins.jpg" alt=" ">
+                </section>
+            </div>
+
+            <div>
+                <hr width="100%" style="border-bottom: 0px solid gray;">
+            </div>
+        </div>
+    </section>
+
+    <section id="discography">
+        <div class="contenedor">
+            <div class="disc-box">
+                <section class="disco-contenedor">
+                    <div>
+                        <p>Realeased Album</p>
+                        <h2>Latest Album</h2>
+                    </div>
+                    <section class="disc-info">
+                        <img src="images/vinyl.png" alt="">
+                        <ol id="detalles">
+                            <li>
+                                <h5>Label: <span>Limitless</span></h5>
+                            </li>
+                            <li>
+                                <h5>Realeased: <span>January 23/03/18</span></h5>
+                            </li>
+                            <li>
+                                <h5>Gender: <span>Country</span></h5>
+                            </li>
+                            <li>
+                                <h5>Styles: <span>Country</span></h5>
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+            </div>
+
+            <div id="play-intro"></div>
+
+            <div class="playlist-box">
+                <!-- <ol class="playlist">
+                    <li class="lista-canciones" id="lista-canciones">
+                        <section class="cancion">
+
+                            <audio src="music/ukulele.mp3" id="music">
+                            </audio>
+                            <div id="reproducir" class="reproducir">
+                                <button id="action-button" onclick="play()">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="nombre-cancion">
+                                <h5>TIMER</h5>
+                                <p>Limitless</p>
+                            </div>
+                        </section>
+                        <section class="descargar">
+                            <h5 class="descargar-title">DOWNLOAD </h5>
+                            <i class="fas fa-download"></i>
+                        </section>
+                    </li>
+                </ol> -->
+                <ol class="playlist" id="cancionero">
+                </ol>
+            </div>
+            <div class="discography">
+                <a id="item1" class="discography-imagenes" href="first-disc.html" target="_self">
+                    <img src="images/josh-rose-trYl7JYATH0-unsplash.jpg" alt="">
+                    <h4>just one thing</h4>
+                </a>
+                <a id="item2" class="discography-imagenes" href="first-disc.html" target="_self">
+                    <img src="images/marek-piwnicki-oLOHA5OI0-Q-unsplash.jpg" alt="">
+                    <h4>time</h4>
+                </a>
+                <a id="item3" class="discography-imagenes" href="first-disc.html" target="_self">
+                    <img src="images/omid-armin-ljWcPLGh1Ck-unsplash.jpg" alt="">
+                    <h4>written in the stars</h4>
+                </a>
+                <a id="item4" class="discography-imagenes" href="first-disc.html" target="_self">
+                    <img src="images/abdullah-ahmad-trRR1hB2kD4-unsplash.jpg" alt="">
+                    <h4>time</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- upcoming-time -->
+
+    <section id="count-down">
+        <div id="upcoming-event" class="time-contenedor">
+            <div class="time-title">
+                <h1>Time until upcoming event</h1>
+                <p>28 August 2021 with over 3 shows - Bath, England</p>
+            </div>
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-title">
+            <h1>memories</h1>
+        </div>
+        <div class="gallery-buttons">
+            <button id="btn-all" class="gallery-btn active" onclick="btnAll()">all</button>
+            <button id="btn-images" class="gallery-btn" onclick="btnImages()">images</button>
+            <button id="btn-videos" class="gallery-btn" onclick="btnVideos()">videos</button>
+        </div>
+        <div class="gallery-images">
+            <div class="gallery-contenedor">
+                <div class="column images">
+                    <div>
+                        <img id="gallery-1" src="images/dickjenkins.jpg" alt="">
+                    </div>
+                    <div>
+                        <img id="gallery-2" src="images/WhatsApp Image 2021-06-15 at 21.37.18.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img id="gallery-3" src="images/djband_o.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column images">
+                    <div>
+                        <div id="gallery-4" onclick="toggle();">
+                        </div>
+                    </div>
+                    <div>
+                        <img id="gallery-5" src="images/djband_c.jpg" alt="">
+                    </div>
+                    <div>
+                        <img id="gallery-6" src="images/WhatsApp Image 2021-06-15 at 21.46.42.jpeg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <div class="modalContent">
+                    <img src="" class="modalImg" />
+                    <span class="modalTxt"></span>
+                </div>
+            </div>
+            <div id="trailer" class="trailer">
+                <video class="video" src="videos/WhatsApp Video 2021-06-15 at 21.46.41.mp4" controls="true">
+                </video>
+                <div class="cerrar">
+                    <i class="far fa-times-circle" onclick="toogleClose();"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section id="contact" class="contact-box">
+        <div class="contact-contenedor">
+
+            <div class="contact-title">
+                <p>Contact with us</p>
+                <h2>Stay in touch</h2>
+
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-box">
+                    <h2>Booking</h2>
+                    <h5>Dick Jenkins</h5>
+                    <p>T+(44)352-3209</p>
+                    <a>booking@tcmi.com </a>
+                </div>
+                <div class="contact-info-box">
+                    <h2>Press</h2>
+                    <h5>Dick Jenkins</h5>
+                    <p>T+(44)352-3209</p>
+                    <a>press@tcmi.net </a>
+                </div>
+                <div class="contact-info-box">
+                    <h2>Info</h2>
+                    <h5>Dick Jenkins </h5>
+                    <p>T+(44)352-3209</p>
+                    <a>info@tcmi.net </a>
+                </div>
+            </div>
+            <div class="contact-icons">
+                <a id="ico-facebook" class="icono" href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a class="icono" href=""> <i class="fab fa-instagram fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-twitter fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-youtube fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-spotify fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class="contenedor">
+        <div class="rights">
+            <p>&#169 2021 all rights reserved. </p>
+        </div>
+    </footer>
+    <script src="script/myscript.js "></script>
+</body>
+
+</html>

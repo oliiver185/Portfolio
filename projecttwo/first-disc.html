@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4854e0d380.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/first_disc.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <section class="header">
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i onclick="myFunction(this)" class="fas fa-bars"></i>
+            </label>
+            <img id="logo" src="images/sound_waves.ico" alt="">
+            <!-- made  title="Kiranshastry">Kiranshastry< href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com -->
+            <ul id="myDIV">
+                <li><a class="btn active" href="index.html">Home</a></li>
+                <li><a class="btn" href="index.html#about">About</a></li>
+                <li><a class="btn" href="index.html#discography">Discography</a></li>
+                <li><a class="btn" href="index.html#gallery">Gallery</a></li>
+                <li><a class="btn" href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"></div> -->
+            <img src="images/jeremy-allouche-YStboKiFPVw-unsplash.jpg" style="width:100%">
+            <div class="text">
+                <h2>TCMI music band</h2> <br>
+                <p> New single coming soon available this autumn</p>
+                <button></button>
+            </div>
+        </div>
+
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext"></div> -->
+            <img src="images/thomas-kelley-2ZWCDBuw1B8-unsplash.jpg" style="width:100%">
+            <div class="text">
+                <h2>Enjoy our music</h2>
+            </div>
+        </div>
+
+        <div style="text-align: center; ">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- <span class="dot"></span> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+
+
+
+
+
+    </section>
+    <section id="discography">
+        <div class="contenedor">
+            <div class="disc-box">
+                <section class="disco-contenedor">
+
+                    <div>
+
+                        <p><img src="images//wave (1).ico" alt=""></p>
+                        <p>Enjoy our music</p>
+                        <h2>Album Info</h2>
+                    </div>
+
+                    <section class="disc-info">
+                        <img src="images/vinyl.png" alt="">
+                        <ol id="detalles">
+                            <li>
+                                <h5>Label: <span>Limitless</span></h5>
+                            </li>
+                            <li>
+                                <h5>Realeased: <span>January 23/03/18</span></h5>
+                            </li>
+                            <li>
+                                <h5>Gender: <span>Country</span></h5>
+                            </li>
+                            <li>
+                                <h5>Styles: <span>Country</span></h5>
+                            </li>
+                        </ol>
+                    </section>
+
+                </section>
+            </div>
+
+            <div class="playlist-box">
+
+                <!-- <ol class="playlist">
+                    <li class="lista-canciones" id="lista-canciones">
+                        <section class="cancion">
+    
+                            <audio src="music/ukulele.mp3" id="music">
+                            </audio>
+                            <div id="reproducir" class="reproducir">
+                                <button id="action-button" onclick="play()">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                            <div class="nombre-cancion">
+                                <h5>TIMER</h5>
+                                <p>Limitless</p>
+                            </div>
+                        </section>
+                        <section class="descargar">
+                            <h5 class="descargar-title">DOWNLOAD </h5>
+                            <i class="fas fa-download"></i>
+                        </section>
+                    </li>
+    
+    
+    
+                </ol> -->
+
+
+                <ol class="playlist" id="cancionero">
+                </ol>
+            </div>
+
+
+    </section>
+
+
+    <!-- contact section -->
+
+    <section id="contact" class="contact-box">
+        <div class="contact-contenedor">
+
+            <div class="contact-title">
+                <p>Contact with us</p>
+                <h2>Stay in touch</h2>
+
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info-box">
+                    <h2>Booking</h2>
+                    <h5>Benaissa Ghrib</h5>
+                    <p>T+(513)352-3209</p>
+                    <a>booking@mousiqua.net </a>
+                </div>
+                <div class="contact-info-box">
+
+                    <h2>Press</h2>
+                    <h5>Benaissa Ghrib</h5>
+                    <p>T+(513)352-3209</p>
+                    <a>booking@mousiqua.net </a>
+
+
+                </div>
+                <div class="contact-info-box">
+
+                    <h2>Booking</h2>
+                    <h5>Benaissa Ghrib</h5>
+                    <p>T+(513)352-3209</p>
+                    <a>booking@mousiqua.net </a>
+
+                </div>
+
+            </div>
+
+            <div class="contact-icons">
+                <a id="ico-facebook" class="icono" href=""><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a class="icono" href=""> <i class="fab fa-instagram fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-twitter fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-youtube fa-2x"></i></a>
+                <a class="icono" href=""><i class="fab fa-spotify fa-2x"></i></a>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="contenedor">
+        <div class="rights">
+            <p>&#169 2021 all rights reserved. </p>
+        </div>
+    </footer>
+
+
+
+    <script src="script/first-disc.js"></script>
+    <!-- <script src="script/myscript.js"></script> -->
+</body>
+
+</html>
