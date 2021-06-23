@@ -185,6 +185,10 @@ body {
     .lives h2 {
         font-size: 16px;
     }
+    .key_board {
+        top: 30%;
+        position: absolute;
+    }
     .teclado {
         width: 100%;
         text-align: center;
