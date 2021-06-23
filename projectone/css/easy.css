@@ -1,106 +1,60 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 body {
     background-color: #34495e;
-    /* color: white; */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    margin: 0;
+    height: 100vh;
     overflow: hidden;
 }
 
 #titulo h1 {
-    margin: 10px 0 0;
+    margin: 40px 0px 10px 0px;
     font-size: 20px;
     color: white;
 }
 
-#imagen {
-    padding: 20px 30px;
-    position: relative;
-    margin: auto;
-    height: 350px;
-    width: 450px;
-    text-align: center;
+.imagen {
+    margin: 10px 0px;
+    height: 300px;
+    width: 300px;
+    margin: 0px;
 }
 
-.cuadros {
-    background-color: black;
-    height: 200px;
-    width: 301px;
-    margin-top: 86px;
-    position: absolute;
-    text-align: center;
-}
-
-.cuadroTransparente {
-    background-color: transparent;
-    height: 200px;
-    width: 301px;
-    margin-top: 86px;
-    position: absolute;
-    text-align: center;
-}
-
-#lives {
-    position: absolute;
-    top: 150px;
-    right: 300px;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: center;
-    color: white;
+.imagen img {
+    height: 100%;
+    width: 100%;
 }
 
 .hiddentext {
-    position: fixed;
-    top: 150px;
-    left: 250px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 20%;
     color: white;
 }
 
-.imagesize {
-    width: 300px;
-    height: 300px;
-    /* margin-inline: auto;
-    align-content: center;
-    margin-top: 40px; */
-    /* position: absolute; */
-}
-
-
-/* input {
-    width: 30px;
-    height: 20px;
-    margin: 5px;
-} */
-
-button {
-    margin: 5px;
-}
-
-#buttons {
-    /* position: relative; */
-    margin-top: 50px;
+.lives {
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    color: white;
     text-align: center;
-    border-color: black solid 1px;
-    border-color: black;
-    /* width: 100%; */
 }
 
-.teclado .keyboard {
+.teclado {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.keyboard {
+    margin: 2px 5px;
     width: 45px;
-    /* background-color: rgb(86, 167, 86); */
     background-color: #28a745;
     cursor: pointer;
     border: 0;
@@ -128,7 +82,6 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: center;
@@ -163,4 +116,47 @@ button {
 #btn-close {
     text-decoration: none;
     color: #2980b9;
+}
+
+@media screen and (max-width:900px) {
+    .hiddentext {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+    .lives {
+        position: absolute;
+        right: 10%;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .imagen {
+        margin: 10px 0px;
+        height: 200px;
+        width: 200px;
+        margin: 0px;
+    }
+    .hiddentext {
+        position: relative;
+        top: 2%;
+        left: -20%;
+    }
+    .lives {
+        position: relative;
+        top: -2%;
+        right: -20%;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .teclado {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

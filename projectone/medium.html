@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelling Game Medium</title>
+    <title>Spelling Game</title>
     <link rel="stylesheet" href="css/medium.css">
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
     <style>
 
     </style>
@@ -23,56 +21,60 @@
 
 
 
-    <div id="imagen">
-        <img class="image-responsive imagesize" id="myImg" src="compman.gif" width="107" height="98">
+    <div class="imagen">
+        <img id="myImg" src="" />
+        <div id="cuadro1" class="cuadros">
+        </div>
     </div>
 
-    <div id="cuadro1" class="cuadros"></div>
+    <!-- <div id="cuadro1" class="cuadros">cuadro</div> -->
 
     <div class="hiddentext">
         <h3>Hidden Word</h3>
         <h2 id="hiddenWord"></h2>
     </div>
-    <div id="lives">
+    <div class="lives">
         <h2>Lives</h2>
         <h2 id="vidas">3</h2>
     </div>
 
 
-    <div class="teclado" id="buttons">
-        <button class="btn btn-success keyboard" id="letraA" onclick="verificar('Q')">Q</button>
-        <button class="btn btn-success keyboard" id="letraW" onclick="verificar('W')">W</button>
-        <button class="btn btn-warning keyboard" id="letraE" onclick="verificar('E')">E</button>
-        <button class="btn btn-success keyboard" id="letraR" onclick="verificar('R')">R</button>
-        <button class="btn btn-success keyboard" id="letraT" onclick="verificar('T')">T</button>
-        <button class="btn btn-success keyboard" id="letraY" onclick="verificar('Y')">Y</button>
-        <button class="btn btn-warning keyboard" id="letraU" onclick="verificar('U')">U</button>
-        <button class="btn btn-warning keyboard" id="letraI" onclick="verificar('I')">I</button>
-        <button class="btn btn-warning keyboard" id="letraO" onclick="verificar('O')">O</button>
-        <button class="btn btn-success keyboard" id="letraP" onclick="verificar('P')">P</button>
+    <div class="teclado">
+        <button class=" keyboard" id="letraQ" onclick="verificar('Q')">Q</button>
+        <button class=" keyboard" id="letraW" onclick="verificar('W')">W</button>
+        <button class=" keyboard" id="letraE" onclick="verificar('E')">E</button>
+        <button class=" keyboard" id="letraR" onclick="verificar('R')">R</button>
+        <button class=" keyboard" id="letraT" onclick="verificar('T')">T</button>
+        <button class=" keyboard" id="letraY" onclick="verificar('Y')">Y</button>
+        <button class=" keyboard" id="letraU" onclick="verificar('U')">U</button>
+        <button class=" keyboard" id="letraI" onclick="verificar('I')">I</button>
+        <button class=" keyboard" id="letraO" onclick="verificar('O')">O</button>
+        <button class=" keyboard" id="letraP" onclick="verificar('P')">P</button>
         <br>
-        <button class="btn btn-warning keyboard" id="letraA" onclick="verificar('A')">A</button>
-        <button class="btn btn-success keyboard" id="letraS" onclick="verificar('S')">S</button>
-        <button class="btn btn-success keyboard" id="letraD" onclick="verificar('D')">D</button>
-        <button class="btn btn-success keyboard" id="letraF" onclick="verificar('F')">F</button>
-        <button class="btn btn-success keyboard" id="letraG" onclick="verificar('G')">G</button>
-        <button class="btn btn-success keyboard" id="letraH" onclick="verificar('H')">H</button>
-        <button class="btn btn-success keyboard" id="letraJ" onclick="verificar('J')">J</button>
-        <button class="btn btn-success keyboard" id="letraK" onclick="verificar('K')">K</button>
-        <button class="btn btn-success keyboard" id="letraL" onclick="verificar('L')">L</button>
+        <button class=" keyboard" id="letraA" onclick="verificar('A')">A</button>
+        <button class=" keyboard" id="letraS" onclick="verificar('S')">S</button>
+        <button class=" keyboard" id="letraD" onclick="verificar('D')">D</button>
+        <button class=" keyboard" id="letraF" onclick="verificar('F')">F</button>
+        <button class=" keyboard" id="letraG" onclick="verificar('G')">G</button>
+        <button class=" keyboard" id="letraH" onclick="verificar('H')">H</button>
+        <button class=" keyboard" id="letraJ" onclick="verificar('J')">J</button>
+        <button class=" keyboard" id="letraK" onclick="verificar('K')">K</button>
+        <button class=" keyboard" id="letraL" onclick="verificar('L')">L</button>
         <br>
-        <button class="btn btn-success keyboard" id="letraZ" onclick="verificar('Z')">Z</button>
-        <button class="btn btn-success keyboard" id="letraX" onclick="verificar('X')">X</button>
-        <button class="btn btn-success keyboard" id="letraC" onclick="verificar('C')">C</button>
-        <button class="btn btn-success keyboard" id="letraV" onclick="verificar('V')">V</button>
-        <button class="btn btn-success keyboard" id="letraB" onclick="verificar('B')">B</button>
-        <button class="btn btn-success keyboard" id="letraN" onclick="verificar('N')">N</button>
-        <button class="btn btn-success keyboard" id="letraM" onclick="verificar('M')">M</button>
-        <button class="keyboard" style="width: 80px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Instrucshions"><a href="index.html" style="text-decoration: none; color: white;">
+        <button class=" keyboard" id="letraZ" onclick="verificar('Z')">Z</button>
+        <button class=" keyboard" id="letraX" onclick="verificar('X')">X</button>
+        <button class=" keyboard" id="letraC" onclick="verificar('C')">C</button>
+        <button class=" keyboard" id="letraV" onclick="verificar('V')">V</button>
+        <button class=" keyboard" id="letraB" onclick="verificar('B')">B</button>
+        <button class=" keyboard" id="letraN" onclick="verificar('N')">N</button>
+        <button class=" keyboard" id="letraM" onclick="verificar('M')">M</button>
+        <button class="keyboard" style="width: 80px;" type="button"><a href="index.html"
+                style="text-decoration: none; color: white;">
                 Menu</a></button>
 
     </div>
     <br>
+
 
     <div class="popup-container" id="popup-container">
         <div class="popup">
@@ -81,24 +83,11 @@
             <button><a id="btn-close" href="index.html">Close</a> </button>
         </div>
     </div>
-    <!-- <img id="myimage" src=""> -->
-
-    <h2 id="answ"></h2>
-    <br>
-
-
-    <!-- <div id="alerta" >
-
-        <button></button>
-        <button></button>
-    </div> -->
-
 
 
 
 </body>
 
-<script src="script/medium.js">
-</script>
+<script src="script/medium.js"></script>
 
 </html>

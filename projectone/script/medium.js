@@ -24,9 +24,6 @@ var selectedword = animals[Math.floor(Math.random() * animals.length)];
 // document.getElementById("myImg").innerHTML
 
 
-// ima.innerHTML = `  
-// ${selectedword.image  }`;
-//document.getElementById("myImg").innerHTML = "<img src='" + imagen + "'>";
 
 const popup = document.getElementById('popup-container');
 
@@ -62,16 +59,12 @@ function verificar(letra) {
         // codigo para remover lista y desaparecer el cuadro
 
         if (letraActual >= 2) {
-            cuadro.classList.remove("cuadros");
-            cuadro.classList.add("cuadroTransparente");
-
+            cuadro.style.display = "none";
         }
 
 
         if (letraActual === respuesta.length) {
             console.log("You win!");
-            // document.getElementById('mensajitowin').style.display = 'block';
-            //  reiniciar();
             finalMessage.innerText = 'Congratulations! You won! 😃';
             popup.style.display = 'flex';
         }

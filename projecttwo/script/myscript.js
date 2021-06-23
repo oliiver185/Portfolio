@@ -1,28 +1,15 @@
+/*to change the menu button*/
+
+function myFunction(x) {
+    x.classList.toggle("fa-times-circle");
+}
+
+//getting songs
+
 obtenerCanciones();
 
 
-
-
-
-
-
-// var btnContainer = document.getElementById("myDIV");
-
-// // Get all buttons with class="btn" inside the container
-// var btns = btnContainer.getElementsByClassName("btn");
-
-// // Loop through the buttons and add the active class to the current/clicked button
-// for (var i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener("click", function() {
-//         var current = document.getElementsByClassName("active");
-//         current[0].className = current[0].className.replace(" active", "");
-//         this.className += " active";
-//     });
-// }
-
-
-/*landing page*/
-
+//slider landing page
 
 var slideIndex = 0;
 showSlides();
@@ -46,15 +33,14 @@ function showSlides() {
 
     setTimeout(showSlides, 5000); // Change image every 2 seconds
 
-    // if (n > slides.length) { slideIndex = 1 }
-    // if (n < 1) { slideIndex = slides.length }
+
 }
 
 
 
 
 
-/*section para el slider*/
+/*slider section*/
 
 
 let slider = document.querySelector('.slider-contenedor');
@@ -79,8 +65,7 @@ setInterval(function() {
 
 function slides() {
     slider.style.transform = "translate(" + (-width * contador) + "px)";
-    // slider.style.transform = "scale(1.5)";
-    // slider.style.transition = "transform 0.4s ";
+
     slider.style.transition = "transform .5s ";
 
 
@@ -102,140 +87,6 @@ function slides() {
 
 
 
-
-/*seccion para el navegador*/
-
-// var icon = document.getElementById('icon');
-// icon.classList.toggle('fas fa-bars');
-// icon.classList.toggle('fas fa-bars');
-
-// document.getElementById('close').addEventListener('click', function() {
-//     var icon = document.getElementById('icon');
-//     icon.classList.toggle(' fa-bars');
-//     icon.classList.toggle('fa-bars');
-// })
-
-
-/*seccion de songs e iconos*/
-
-// const musicContainer = document.getElementById('music-container');
-// const playBtn = document.getElementById('play');
-// const prevBtn = document.getElementById('prev');
-// const nextBtn = document.getElementById('next');
-
-// const audio = document.getElementById('audio');
-// const progress = document.getElementById('progress');
-// const progressContainer = document.getElementById('progress-container');
-// const title = document.getElementById('title');
-// const cover = document.getElementById('cover');
-
-// Song titles
-// const songs = ['hey', 'summer', 'ukulele'];
-
-// Keep track of song
-// let songIndex = 2;
-
-// Initially load song details into DOM
-// loadSong(songs[songIndex]);
-
-// Update song details
-// function loadSong(song) {
-//     title.innerText = song;
-//     audio.src = `music/${song}.mp3`;
-//     cover.src = `images/${song}.jpg`;
-// }
-
-// Play song
-// function playSong() {
-//     musicContainer.classList.add('play');
-//     playBtn.querySelector('i.fas').classList.remove('fa-play');
-//     playBtn.querySelector('i.fas').classList.add('fa-pause');
-
-//     audio.play();
-// }
-
-// Pause song
-// function pauseSong() {
-//     musicContainer.classList.remove('play');
-//     playBtn.querySelector('i.fas').classList.add('fa-play');
-//     playBtn.querySelector('i.fas').classList.remove('fa-pause');
-
-//     audio.pause();
-// }
-
-// Previous song
-// function prevSong() {
-//     songIndex--;
-
-//     if (songIndex < 0) {
-//         songIndex = songs.length - 1;
-//     }
-
-//     loadSong(songs[songIndex]);
-
-//     playSong();
-// }
-
-// Next song
-// function nextSong() {
-//     songIndex++;
-
-//     if (songIndex > songs.length - 1) {
-//         songIndex = 0;
-//     }
-
-//     loadSong(songs[songIndex]);
-
-//     playSong();
-// }
-
-// Update progress bar
-// function updateProgress(e) {
-//     const { duration, currentTime } = e.srcElement;
-//     const progressPercent = (currentTime / duration) * 100;
-//     progress.style.width = `${progressPercent}%`;
-// }
-
-// Set progress bar
-// function setProgress(e) {
-//     const width = this.clientWidth;
-//     const clickX = e.offsetX;
-//     const duration = audio.duration;
-
-//     audio.currentTime = (clickX / width) * duration;
-// }
-
-// Event listeners
-// playBtn.addEventListener('click', () => {
-//     const isPlaying = musicContainer.classList.contains('play');
-
-//     if (isPlaying) {
-//         pauseSong();
-//     } else {
-//         playSong();
-//     }
-// });
-
-// Change song
-// prevBtn.addEventListener('click', prevSong);
-// nextBtn.addEventListener('click', nextSong);
-
-// Time/song update
-// audio.addEventListener('timeupdate', updateProgress);
-
-// Click on progress bar
-// progressContainer.addEventListener('click', setProgress);
-
-// Song ends
-// audio.addEventListener('ended', nextSong);
-
-
-
-
-// function play() {
-//     var audio = document.getElementById("music");
-//     audio.play();
-// }
 
 
 
@@ -362,26 +213,11 @@ function obtenerCanciones() {
 
     misCanciones.innerHTML = salidaListado;
 
-    // for (var i = 0; i < canciones.length; i++) {
-
-
-    //     var current = document.getElementById('action-button').attributes('onclick');
-
-    //     current[i] = current[i].removeAttibute('onclick', '');
-    //     this.current[i].addAttribute('onclick') += ('onclick')
-
-
-    // current[0].className = current[0].className.replace(" active", "");
-    // this.className += " active";
 
 
 }
 
-/*to change the menu button*/
 
-function myFunction(x) {
-    x.classList.toggle("fa-times-circle");
-}
 
 
 /*countdown */
