@@ -1,8 +1,12 @@
+/*to change the menu button*/
+
+function myFunction(x) {
+    x.classList.toggle("fa-times-circle");
+}
+
+
+//getting songs
 obtenerCanciones();
-
-
-
-
 
 
 
@@ -102,26 +106,9 @@ function obtenerCanciones() {
 
     misCanciones.innerHTML = salidaListado;
 
-    // for (var i = 0; i < canciones.length; i++) {
-
-
-    //     var current = document.getElementById('action-button').attributes('onclick');
-
-    //     current[i] = current[i].removeAttibute('onclick', '');
-    //     this.current[i].addAttribute('onclick') += ('onclick')
-
-
-    // current[0].className = current[0].className.replace(" active", "");
-    // this.className += " active";
-
 
 }
 
-/*to change the menu button*/
-
-function myFunction(x) {
-    x.classList.toggle("fa-times-circle");
-}
 
 
 var slideIndex = 0;
@@ -146,6 +133,4 @@ function showSlides() {
 
     setTimeout(showSlides, 6000); // Change image every 2 seconds
 
-    // if (n > slides.length) { slideIndex = 1 }
-    // if (n < 1) { slideIndex = slides.length }
 }
