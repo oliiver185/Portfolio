@@ -169,7 +169,7 @@ body {
     .hiddentext {
         position: absolute;
         top: 42%;
-        left: 20%;
+        left: 3%;
     }
     .hiddentext h3 {
         font-size: 16px;
@@ -177,7 +177,7 @@ body {
     .lives {
         position: absolute;
         top: 42%;
-        right: 20%;
+        right: 4%;
         justify-content: center;
         align-content: center;
         text-align: center;
