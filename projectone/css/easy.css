@@ -132,6 +132,11 @@ body {
 }
 
 @media screen and (max-width:600px) {
+    #titulo h1 {
+        margin: 20px 0px 10px 0px;
+        font-size: 20px;
+        color: white;
+    }
     .imagen {
         margin: 10px 0px;
         height: 200px;
@@ -139,24 +144,43 @@ body {
         margin: 0px;
     }
     .hiddentext {
-        position: relative;
-        top: 2%;
-        left: -20%;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+    }
+    .hiddentext h3 {
+        font-size: 16px;
     }
     .lives {
-        position: relative;
-        top: -2%;
-        right: -20%;
+        position: absolute;
+        top: 35%;
+        right: 20%;
         justify-content: center;
         align-content: center;
         text-align: center;
     }
+    .lives h2 {
+        font-size: 16px;
+    }
     .teclado {
         width: 100%;
         text-align: center;
-        margin: 10px 0px;
+        margin: 80px 0px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .keyboard {
+        margin: 2px 5px;
+        width: 45px;
+        background-color: #28a745;
+        cursor: pointer;
+        border: 0;
+        padding: 10px 10px;
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        color: white;
+        border-radius: 5px;
     }
 }
