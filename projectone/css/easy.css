@@ -145,7 +145,7 @@ body {
     }
     .hiddentext {
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 20%;
     }
     .hiddentext h3 {
@@ -153,7 +153,7 @@ body {
     }
     .lives {
         position: absolute;
-        top: 35%;
+        top: 40%;
         right: 20%;
         justify-content: center;
         align-content: center;
@@ -165,7 +165,7 @@ body {
     .teclado {
         width: 100%;
         text-align: center;
-        margin: 80px 0px;
+        margin: 150px 0px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
