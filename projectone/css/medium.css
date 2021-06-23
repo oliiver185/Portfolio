@@ -210,4 +210,19 @@ body {
         color: white;
         border-radius: 5px;
     }
+    .popup-container {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        /* display: flex; */
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup {
+        background: #2980b9;
+        border-radius: 5px;
+        box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        text-align: center;
+    }
 }

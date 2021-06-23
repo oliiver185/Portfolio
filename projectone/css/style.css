@@ -80,6 +80,7 @@ body {
 }
 
 .popup {
+    overflow-x: hidden;
     background: #2980b9;
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
@@ -113,4 +114,23 @@ body {
 #final-message {
     font-size: 14px;
     color: white;
+}
+
+@media screen and (max-width:600px) {
+    .popup-container {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        margin-left: -100px;
+        /* display: flex; */
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup {
+        background: #2980b9;
+        border-radius: 5px;
+        box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        text-align: center;
+    }
 }

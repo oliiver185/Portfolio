@@ -88,6 +88,7 @@ body {
 }
 
 .popup {
+    /* overflow-x: hidden; */
     background: #2980b9;
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
@@ -146,15 +147,15 @@ body {
     .hiddentext {
         position: absolute;
         top: 40%;
-        left: 20%;
+        left: 3%;
     }
     .hiddentext h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .lives {
         position: absolute;
         top: 40%;
-        right: 20%;
+        right: 4%;
         justify-content: center;
         align-content: center;
         text-align: center;
@@ -186,5 +187,20 @@ body {
         align-content: center;
         color: white;
         border-radius: 5px;
+    }
+    .popup-container {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        /* display: flex; */
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup {
+        background: #2980b9;
+        border-radius: 5px;
+        box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        text-align: center;
     }
 }
