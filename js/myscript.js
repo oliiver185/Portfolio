@@ -75,3 +75,15 @@ $(function() {
 
 
 });
+
+
+wow = new WOW({
+    boxClass: 'wow', // default
+    animateClass: 'animated',
+    offset: 0,
+
+    callback: function(box) {
+        // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    }
+});
+wow.init();
