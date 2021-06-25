@@ -24,11 +24,21 @@ body {
     height: 300px;
     width: 300px;
     margin: 0px;
+    position: relative;
 }
 
 .imagen img {
     height: 100%;
     width: 100%;
+    position: absolute;
+}
+
+.cuadros {
+    background-color: black;
+    margin-top: 50px;
+    height: 180px;
+    width: 301px;
+    position: relative;
 }
 
 .hiddentext {
@@ -144,6 +154,14 @@ body {
         width: 200px;
         margin: 0px;
     }
+    .cuadros {
+        background-color: black;
+        height: 130px;
+        width: 200px;
+        margin-top: 25px;
+        position: absolute;
+        text-align: center;
+    }
     .hiddentext {
         position: absolute;
         top: 40%;
@@ -203,38 +221,4 @@ body {
         padding: 5px;
         text-align: center;
     }
-}
-
-.keyboard {
-    margin: 2px 5px;
-    width: 45px;
-    background-color: #28a745;
-    cursor: pointer;
-    border: 0;
-    padding: 10px 10px;
-    font-size: 18px;
-    text-align: center;
-    align-content: center;
-    color: white;
-    border-radius: 5px;
-}
-
-.popup-container {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    /* display: flex; */
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.popup {
-    background: #2980b9;
-    border-radius: 5px;
-    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    text-align: center;
-}
-
-
 }
