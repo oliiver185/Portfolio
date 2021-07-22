@@ -19,7 +19,7 @@ $(function() {
 
     //init typed.js
 
-    var typed = new Typed('.animate', {
+    let typed = new Typed('.animate', {
         strings: [
             "am a web developer.",
             " work with " + "HTML",
@@ -72,7 +72,12 @@ $(function() {
     //     }
     // }
 
+    
 
+    $('#myForm').on('submit', function(e){
+        $('#myModal').modal('show');
+        e.preventDefault();
+      });
 
 });
 
