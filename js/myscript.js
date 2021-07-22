@@ -79,7 +79,16 @@ $(function() {
         e.preventDefault();
       });
 
+
+    
+
 });
+
+function formSubmit(){
+
+    window.location.reload();
+
+}
 
 
 wow = new WOW({
