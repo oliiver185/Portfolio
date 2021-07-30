@@ -13,7 +13,39 @@ var animals = [{
 }, {
     name: "HORSE",
     image: "images/horse.jpg"
-}];
+}, {
+    name: "BEAVER",
+    image: "images/beaver.png"
+},
+{
+    name: "BEETLE",
+    image: "images/beetle.png"
+}, {
+    name: "CROCODILE",
+    image: "images/crocodile.png"
+}, {
+    name: "ELEPHANT",
+    image: "images/elephant.jpg"
+}, {
+    name: "HARBOR",
+    image: "images/harbor.png"
+},
+{
+    name: "HORNET",
+    image: "images/hornet.png"
+}, {
+    name: "LAMB",
+    image: "images/lamb.png"
+}, {
+    name: "PARROT",
+    image: "images/parrot.png"
+},
+{
+    name: "TRICERATOPS",
+    image: "images/triceratops.png"
+}
+
+];
 
 // const words = ["CAT", "DOG", "CAR", "BEAR", "SHARK"]
 
@@ -51,9 +83,9 @@ function verificar(letra) {
 
     if (letra === respuesta[letraActual]) {
         resultado.push(letra);
-        console.log("Perfect!");
+        // console.log("Perfect!");
         resultadoPantalla += resultado[letraActual];
-        console.log("Answer: " + resultado);
+        // console.log("Answer: " + resultado);
         letraActual++;
 
         // codigo para remover lista y desaparecer el cuadro
@@ -64,18 +96,18 @@ function verificar(letra) {
 
 
         if (letraActual === respuesta.length) {
-            console.log("You win!");
+            // console.log("You win!");
             finalMessage.innerText = 'Congratulations! You won! 😃';
             popup.style.display = 'flex';
         }
     } else {
         vidas--;
-        console.log(letra + " is not the letter we're looking for...");
-        console.log("Remaining lives: " + vidas);
+        // console.log(letra + " is not the letter we're looking for...");
+        // console.log("Remaining lives: " + vidas);
 
 
         if (vidas === 0) {
-            console.log("You lose! Sorry");
+            // console.log("You lose! Sorry");
             // reiniciar();
             finalMessage.innerText = 'Unfortunately you lost. 😕';
             popup.style.display = 'flex';
