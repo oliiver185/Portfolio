@@ -1,94 +1,77 @@
-$(function() {
-
-    $('body').scrollspy({
-        target: '.navbar',
-        offset: 160
-    });
 
 
+function toogle(x) {
+    x.classList.toggle("fa-times");
+}
 
-    //shrink function for navbar
-
-    $('.nav-link, .down-button').click(function() {
-        var sectionTo = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(sectionTo).offset().top - 10
-        }, 1500, 'easeInOutExpo');
-    });
-
-
-    //init typed.js
-
-    let typed = new Typed('.animate', {
-        strings: [
-            "am a web developer.",
-            " work with " + "HTML",
-            " work with " + "CSS",
-            " work with " + "JAVASCRIPT"
-        ],
-        // smartBackspace: true,
-        typeSpeed: 60,
-        backSpeed: 50,
-        loop: true,
-        backDelay: 2000
-    });
+$('body').scrollspy({
+    target: '.navbar',
+    offset: 160
+});
 
 
 
+//scroll  navbar
 
+$('.nav-link, .down-button').click(function () {
+    var sectionTo = $(this).attr('href');
+    $("html, body").animate({
+        scrollTop: $(sectionTo).offset().top - 10
+    }, 1500, 'easeInOutExpo');
 
-
-    //init aos
-    AOS.init();
-
-
-
-    //agregando skills section
-    // window.addEventListener('load', () => {
-    //     // Ejecuta manualmente el evento de click de tu elemento
-    //     elem.cargar();
-    // })
-    // document.getElementByClass('myBar').addEventListener(cargar(), false);
-
-    // function cargar() {
-
-    //     var i = 0;
-    //     // alert("Hello! I am an alert box!");
-    //     if (i == 0) {
-    //         i = 1;
-    //         var elem = document.getElementByClass('myBar');
-    //         var width = 1;
-    //         var id = setInterval(frame, 18);
-
-    //         function frame() {
-    //             if (width >= 80) {
-    //                 clearInterval(id);
-    //                 i = 0;
-    //             } else {
-    //                 width++;
-    //                 elem.style.width = width + "%";
-    //             }
-    //         }
-    //     }
-    // }
-
-    
-
-    $('#myForm').on('submit', function(e){
-        $('#myModal').modal('show');
-        e.preventDefault();
-      });
-
-
-    
 
 });
 
-function formSubmit(){
 
-    window.location.reload();
+//navbar effect
+$(document).ready(function () {
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop()) {
+            $("header").addClass('bgc');
+        } else {
+            $("header").removeClass('bgc');
+        }
+    });
 
-}
+});
+
+
+//init typed.js
+
+let typed = new Typed('.animate', {
+    strings: [
+        "am a web developer.",
+        " work with " + "HTML",
+        " work with " + "CSS",
+        " work with " + "JAVASCRIPT"
+    ],
+    // smartBackspace: true,
+    typeSpeed: 60,
+    backSpeed: 50,
+    loop: true,
+    backDelay: 2000
+});
+
+
+
+
+
+
+//init aos
+AOS.init();
+
+
+
+//open modal on submit
+
+$('#myForm').on('submit', function (e) {
+    e.preventDefault();
+    $('#myModal').modal('show');
+    $('#myForm')[0].reset();
+
+});
+
+
 
 
 wow = new WOW({
@@ -96,14 +79,13 @@ wow = new WOW({
     animateClass: 'animated',
     offset: 0,
 
-    callback: function(box) {
+    callback: function (box) {
         // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
     }
 });
+
+
 wow.init();
 
-// document.getElementById('slider-animation').onclick = function() {
-//     var section = document.createElement('section');
-//     section.className = 'section--purple wow fadeInDown';
-//     this.parentNode.insertBefore(section, this);
-// };
+
+

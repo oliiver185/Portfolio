@@ -4,28 +4,52 @@
  body {
      background-color: white;
      overflow-x: hidden;
+     
  }
  /* header section */
+
  
- .navbar {
-     background-color: rgb(22, 21, 21) !important;
-     padding: 15px 30px;
-     transition: 0.5s;
-     /* opacity: 0.6; */
-     -webkit-transition: all 0.5s;
-     /* max-width: min-content; */
+
+ header.barra{
+    background: rgb(91, 91, 95);
+    background: linear-gradient(90deg, rgba(39,39,41) 0%, rgba(3,1,50,1) 0%, rgb(27,27,29) 0%, rgba(0,0,0,1) 100%, rgba(6,5,83,1) 100%, rgba(7,7,98,1) 100%, rgba(9,9,121,1) 100%);
+    position: fixed;
+    width: 100%; 
+   transition: 0.6s;
+   -webkit-transition: all 0.6s;
+   z-index: 999;  
  }
+
+ nav.navbar {
+    background: rgb(70, 70, 73) !important;
+    background: linear-gradient(90deg, rgb(39, 39, 41) 0%, rgba(3,1,50,1) 0%, rgb(27, 27, 29) 0%, rgba(0,0,0,1) 100%, rgba(6,5,83,1) 100%, rgba(7,7,98,1) 100%, rgba(9,9,121,1) 100%) !important;   
+     
+}
+
+
+.bgc {
+    background-color: #343a40;
+    padding: 10px 0px;
+    width: 100%;
+    overflow-x: hidden;
+    /* transition: 0.5s; */
+    /* opacity: 0.6; */
+    /* -webkit-transition: all 0.5s; */
+    /* max-width: min-content; */
+}
+
  
  .navbar a {
      font-weight: 600;
+     /* margin-right: 25px; */
  }
  
- .cbp-af-header-shrink {
+ /* .cbp-af-header-shrink {
      padding-top: 5px;
      padding-bottom: 5px;
      background-color: rgb(51, 50, 50) !important;
      opacity: 0.98 !important;
- }
+ } */
  
  .nav-item .nav-link .active>a {
      color: #14e7c4;
@@ -44,7 +68,20 @@
      background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
+     overflow-x: hidden;     
  }
+
+
+ .navbar-toggler:focus{
+     outline: none;
+     
+ }
+ .navbar-toggler i{
+     padding: 5px 2px;
+     
+ }
+
+
  
  @media only screen and (max-device-width: 800px) {
      .parallax {
@@ -87,16 +124,41 @@
      width: 100%;
      font-weight: 400;
  }
+
+ .button-box{
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+   
+     /* 
+     align-content: flex-end; */
+     /* align-self: flex-end; */
+
+ }
+
+ .down-button i::before{
+     outline: none;
+ }
  
  .down-button i {
-     /* margin-bottom: 40px; */
+    
+     margin-bottom: 80px;
      align-items: center;
      color: #eaf3f2;
+     transition: all 0.5s ease;
+     border-color: transparent;
  }
  
- .down-button:hover {
-     color: #75b7f5;
+ .down-button i:hover {
+     /* color: #75b7f5; */
+     /* outline: none; */
+     transform: translateY(-10px);
+     /* margin-bottom: 80px; */
+
+    
  }
+
+
  
  .clear {
      clear: both;
@@ -112,9 +174,10 @@
      /* background-attachment: fixed; */
      background-position: center;
      background-repeat: no-repeat;
-     overflow-y: hidden;
+     /* overflow-y: hidden; */
      display: flex;
      flex-direction: column;
+     width: 100%;
  }
  
  @media only screen and (max-device-width: 500px) {
@@ -157,15 +220,16 @@
  
 
  .profile-photo {
-     display: flex; 
-     justify-content: center;
+     display: flex;
+    justify-content: center;
 
  }
 
  .profile-photo img {
     height: 250px;
-    width: 180px;
+    width: 170px;
     border-radius: 5px;
+    margin-top: 40px;
  }
  
  #text-about-me {
@@ -174,16 +238,18 @@
     color: #eaf3f2;
     font-family:  sans-serif;
     text-align: justify;
-    align-items:flex-start;
+    align-items: flex-start;
+    justify-content: start;
     margin-top: 30px;
-    left: 180px;
+    /* padding: 15px; */
+    /* left: 180px; */
     /* margin-left: 250px; */
  
 
  }
 
  #text-about-me p {
-     justify-content: right;
+     padding: 20px;
  }
 
  @media only screen and (max-width:775px) {
@@ -251,7 +317,8 @@ Experience section
      background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
-     overflow-y: hidden;
+
+     /* overflow-y: hidden; */
  }
  
  @media (max-width: 500px) {
