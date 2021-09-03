@@ -64,12 +64,12 @@ AOS.init();
 
 //open modal on submit
 
-$('#myForm').on('submit', function (e) {
-    e.preventDefault();
-    $('#myModal').modal('show');
-    $('#myForm')[0].reset();
+// $('#myForm').on('submit', function (e) {
+//     e.preventDefault();
+//     $('#myModal').modal('show');
+//     $('#myForm')[0].reset();
 
-});
+// });
 
 
 
