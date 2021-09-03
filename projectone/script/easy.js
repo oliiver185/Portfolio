@@ -1,4 +1,4 @@
-var animals = [{
+let animals = [{
     name: "CAT",
     image: "images/cat.jpg"
 }, {
@@ -50,7 +50,7 @@ var animals = [{
 
 // const words = ["CAT", "DOG", "CAR", "BEAR", "SHARK"]
 
-var selectedword = animals[Math.floor(Math.random() * animals.length)];
+let selectedword = animals[Math.floor(Math.random() * animals.length)];
 
 //var imagen = selectedword.image;
 
@@ -68,7 +68,7 @@ const popup = document.getElementById('popup-container');
 
 const finalMessage = document.getElementById('final-message');
 
-var respuesta = selectedword.name;
+let respuesta = selectedword.name;
 // console.log(respuesta);
 document.getElementById("myImg").src = selectedword.image;
 

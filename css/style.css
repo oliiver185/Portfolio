@@ -32,24 +32,14 @@
     padding: 10px 0px;
     width: 100%;
     overflow-x: hidden;
-    /* transition: 0.5s; */
-    /* opacity: 0.6; */
-    /* -webkit-transition: all 0.5s; */
-    /* max-width: min-content; */
 }
 
  
  .navbar a {
      font-weight: 600;
-     /* margin-right: 25px; */
  }
  
- /* .cbp-af-header-shrink {
-     padding-top: 5px;
-     padding-bottom: 5px;
-     background-color: rgb(51, 50, 50) !important;
-     opacity: 0.98 !important;
- } */
+
  
  .nav-item .nav-link .active>a {
      color: #14e7c4;
@@ -129,11 +119,6 @@
      display: flex;
      align-items: flex-end;
      justify-content: center;
-   
-     /* 
-     align-content: flex-end; */
-     /* align-self: flex-end; */
-
  }
 
  .down-button i::before{
@@ -149,13 +134,8 @@
      border-color: transparent;
  }
  
- .down-button i:hover {
-     /* color: #75b7f5; */
-     /* outline: none; */
+ .down-button i:hover {   
      transform: translateY(-10px);
-     /* margin-bottom: 80px; */
-
-    
  }
 
 
@@ -163,9 +143,14 @@
  .clear {
      clear: both;
  }
+
+
+
  /* about section */
+
+
+
  /* about-me-background */
- 
  #about-me {
      /* height: 100vh; */
      min-height: 100vh;
@@ -211,14 +196,12 @@
  #photos {
      margin-top: 130px;
      display: flex;
-     justify-content: center;
-   
+     justify-content: center; 
  }
+
+
  /*skills section*/
  
- /* working on screen */
- 
-
  .profile-photo {
      display: flex;
     justify-content: center;
@@ -256,20 +239,16 @@
     #photos {
         margin-top: 40px;
         flex-direction: column;
-        align-items: center;
-    
+        align-items: center;  
     }
 
     #text-about-me {
-
-       
-        left: 0;
-        /* margin-left: 250px; */
-     
-    
+        left: 0;     
      }
    
 }
+
+
  /* what I do secction */
  
  .slider-skill {
@@ -307,18 +286,18 @@
      }
  }
  /* end of what I do */
- /* 
-Experience section
-*/
+
+
+
+
+ /* Experience section*/
  
  #experience {
      background-size: cover;
      background-image: url(../images/nasa-Q1p7bh3SHj8-unsplash.jpg);
      background-attachment: fixed;
      background-position: center;
-     background-repeat: no-repeat;
-
-     /* overflow-y: hidden; */
+     background-repeat: no-repeat;  
  }
  
  @media (max-width: 500px) {
@@ -331,6 +310,10 @@ Experience section
      margin-top: 25px;
      margin-bottom: 100px;
  }
+
+
+
+
  /* projects section */
  
  #projects {
@@ -362,15 +345,17 @@ Experience section
  .box-container .box {
      position: center;
  }
+
+
+
+
  /* contact section */
  
  #contact {
      min-height: 110vh;
      background-image: url(../images/blakee.jpg);
-     /* background-attachment: fixed; */
      background-position: center;
-     background-repeat: no-repeat;
-     /* overflow-y: hidden; */
+     background-repeat: no-repeat;    
  }
  
  @media only screen and (max-device-width: 1000px) {

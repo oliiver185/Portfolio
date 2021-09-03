@@ -25,14 +25,6 @@ nav {
 }
 
 
-/* 
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-} */
 
 #logo {
     margin-left: 105px;
@@ -245,21 +237,7 @@ a:hover {
 }
 
 
-/* .header { */
 
-
-/* background: url(/images/dominik-scythe-cJmTXUAUBGc-unsplash.jpg)
-     no-repeat;
-    background-size: cover; */
-
-
-/* height: calc(100vh - 80px); */
-
-
-/* height: 100vh; */
-
-
-/* } */
 
 .dicography-contenedor {
     width: 100%;
@@ -472,13 +450,6 @@ a:hover {
 }
 
 
-/* .playlist-box ol {
-    margin-top: 200px;
-    border: 0 solid silver;
-    border-width: 1px 1px 0 0;
-} */
-
-
 /*contact us section*/
 
 .contact-box {
@@ -542,16 +513,6 @@ a:hover {
     }
 }
 
-
-/* .contact-card {
-    height: 162px;
-    width: 230px;
-} */
-
-
-/* .contact.car h2 {
-    text-align: center;
-} */
 
 .contact-info-box {
     width: 100%;

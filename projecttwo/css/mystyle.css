@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 * {
@@ -28,14 +27,7 @@ nav {
 }
 
 
-/* 
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-} */
+
 
 #logo {
     margin-left: 105px;
@@ -128,15 +120,9 @@ a:hover {
 }
 
 
-/* .header {
-    background: url(../images/dominik-scythe-cJmTXUAUBGc-unsplash.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-    height: 100vh;
-} */
 
 
-/*para el landing*/
+/* landing*/
 
 .mySlides {
     display: none;
@@ -368,17 +354,7 @@ a:hover {
 }
 
 
-/* .contenido-slider:nth-child(4) {
-   
-    background: rgb(2, 2, 2);
-    color: white;
-}
 
-.contenido-slider:nth-child(3) a {
-   
-    background: rgb(14, 13, 13);
-    color: white;
-} */
 
 @media screen and (max-width:900px) {
     .contenido-slider>img {
@@ -408,9 +384,7 @@ a:hover {
 /*Discography Section starts here*/
 
 
-/* #discography {
-    margin-bottom: 40px;
-} */
+
 
 .dicography-contenedor {
     width: 100%;
@@ -616,11 +590,6 @@ a:hover {
 }
 
 
-/* .playlist-box ol {
-    margin-top: 200px;
-    border: 0 solid silver;
-    border-width: 1px 1px 0 0;
-} */
 
 .discography {
     width: 100%;
@@ -894,12 +863,7 @@ a:hover {
 }
 
 
-/* .column2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-} */
+
 
 #gallery-1 {
     border-color: turquoise;

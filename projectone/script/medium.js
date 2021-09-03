@@ -1,4 +1,4 @@
-var animals = [{
+let animals = [{
     name: "CAT",
     image: "images/cat.jpg"
 }, {
@@ -64,12 +64,12 @@ const finalMessage = document.getElementById('final-message');
 
 //console.log(selectedword);
 
-var respuesta = selectedword.name;
+let respuesta = selectedword.name;
 console.log(respuesta);
 document.getElementById("myImg").src = selectedword.image;
 
 //obteniendo el id de cuadro 1
-var cuadro = document.getElementById('cuadro1');
+let cuadro = document.getElementById('cuadro1');
 
 
 // Variables para respuestas

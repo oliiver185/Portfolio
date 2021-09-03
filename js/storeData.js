@@ -27,9 +27,10 @@ if(form){ // Si existe nuestro elemento en memoria este se quedara escuchando al
 
 //Create Event Listener To Allow Form Submission
 // submitButton.addEventListener("click", (e) => {
-  //Prevent Default Form Submission Behavior
+ 
 
   function contactForm(e) {
+    //Prevent Default Form Submission Behavior
   e.preventDefault()
 
   //Get Form Values
