@@ -19,7 +19,7 @@ const form = document.getElementById('myForm'); // Obtenemos la referencia al fo
 
 if(form){ // Si existe nuestro elemento en memoria este se quedara escuchando al evento submit del formulario
   form.addEventListener('submit', contactForm);
-  console.log('hola oli'); // Al momento de enviar el formulario, ejecuta la función "contactform"
+   // Al momento de enviar el formulario, ejecuta la función "contactform"
 }
 
 //Get Submit Form
@@ -43,7 +43,9 @@ if(form){ // Si existe nuestro elemento en memoria este se quedara escuchando al
     email: e_mail,
     message: m_essage
   }).then( () => {
-    alert("Your Form Has Been Submitted Successfully");
+    // alert("Your Form Has Been Submitted Successfully");
+    $('#myModal').modal('show');
+    $('#myForm')[0].reset();
   }).catch((error) => {
     alert(error)
   })
