@@ -183,7 +183,7 @@
  }
  
  #photos {
-     margin-top: 130px;
+     margin-top: 40px;
      display: flex;
      justify-content: center; 
  }
@@ -194,6 +194,7 @@
  .profile-photo {
      display: flex;
     justify-content: center;
+    margin-top: 80px;
 
  }
 
@@ -209,13 +210,14 @@
     display: flex;
     color: #eaf3f2;
     text-align: justify;
-    align-items: center;
-    justify-content: start;
+    /* align-items: center; */
+    /* justify-content: start; */
  }
 
  #text-about-me p {
      /* padding: 10px 0px; */
-     margin: 15px 0px 0px 0px;
+     padding-right: 22px;
+     margin: 0px 0px 0px 0px;
  }
 
  .about-me-text{
@@ -224,7 +226,12 @@
  }
 
  @media only screen and (max-width:900px) {
+  
+    
+    .profile-photo {
+       margin-top: 120px;
    
+    }
  .photo{
     margin-top: 30px;
    
@@ -234,19 +241,25 @@
 
  
  @media (max-width: 765px) {
+
+    .profile-photo {
+       
+       margin-top: 10px;
+   
+    }
      .about-me-text {
-         background-color: rgba(59, 53, 53, 0.5);
+         background-color: rgba(29, 27, 27, 0.9);
          padding: 10px;
      }
 
      #photos {
-        margin-top: 40px;
+        margin-top: 0px;
         flex-direction: column;
         align-items: center;  
     }
 
     #text-about-me {
-        left: 0;     
+      margin-top: 10px;  
      }
  }
 
