@@ -23,12 +23,13 @@ body {
     margin: 10px 0px;
     height: 300px;
     width: 300px;
-    margin: 0px;
 }
 
 .imagen img {
     height: 100%;
+    padding-top: 20px;
     width: 100%;
+    object-fit: contain;
 }
 
 .hiddentext {

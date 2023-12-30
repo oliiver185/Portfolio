@@ -1,18 +1,18 @@
 let animals = [{
     name: "CAT",
-    image: "images/cat.jpg"
+    image: "images/cat.png"
 }, {
     name: "DOG",
-    image: "images/perro.jpg"
+    image: "images/dog.png"
 }, {
     name: "BEAR",
-    image: "images/oso.jpg"
+    image: "images/bear.png"
 }, {
     name: "PIG",
-    image: "images/cerdo.jpg"
+    image: "images/pig.png"
 }, {
     name: "HORSE",
-    image: "images/horse.jpg"
+    image: "images/horse.png"
 }, {
     name: "BEAVER",
     image: "images/beaver.png"
@@ -25,14 +25,14 @@ let animals = [{
     image: "images/crocodile.png"
 }, {
     name: "ELEPHANT",
-    image: "images/elephant.jpg"
+    image: "images/elephant.png"
 }, {
     name: "HARBOR",
     image: "images/harbor.png"
 },
 {
-    name: "HORNET",
-    image: "images/hornet.png"
+    name: "BEE",
+    image: "images/bee.png"
 }, {
     name: "LAMB",
     image: "images/lamb.png"
@@ -66,10 +66,10 @@ const finalMessage = document.getElementById('final-message');
 
 let respuesta = selectedword.name;
 console.log(respuesta);
-document.getElementById("myImg").src = selectedword.image;
+document.querySelector("#hiddenImage").src = selectedword.image;
 
 //obteniendo el id de cuadro 1
-let cuadro = document.getElementById('cuadro1');
+// let cuadro = document.getElementById('cuadro1');
 
 
 // Variables para respuestas
@@ -91,7 +91,7 @@ function verificar(letra) {
         // codigo para remover lista y desaparecer el cuadro
 
         if (letraActual >= 2) {
-            cuadro.style.display = "none";
+            document.querySelector("#hiddenImage").classList.remove('filter')
         }
 
 

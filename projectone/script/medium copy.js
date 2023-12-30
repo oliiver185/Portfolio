@@ -5,15 +5,14 @@ let animals = [{
     name: "DOG",
     image: "images/dog.png"
 }, {
-    name: "HORSE",
-    image: "images/horse.png"
-},
-{
     name: "BEAR",
     image: "images/bear.png"
 }, {
     name: "PIG",
     image: "images/pig.png"
+}, {
+    name: "HORSE",
+    image: "images/horse.png"
 }, {
     name: "BEAVER",
     image: "images/beaver.png"
@@ -50,30 +49,27 @@ let animals = [{
 
 // const words = ["CAT", "DOG", "CAR", "BEAR", "SHARK"]
 
-let selectedword = animals[Math.floor(Math.random() * animals.length)];
+var selectedword = animals[Math.floor(Math.random() * animals.length)];
 
 //var imagen = selectedword.image;
 
 // document.getElementById("myImg").innerHTML
 
 
-// ima.innerHTML = `  
-// ${selectedword.image  }`;
-//document.getElementById("myImg").innerHTML = "<img src='" + imagen + "'>";
-
-
-//console.log(selectedword);
 
 const popup = document.getElementById('popup-container');
 
 const finalMessage = document.getElementById('final-message');
+
+
+//console.log(selectedword);
 
 let respuesta = selectedword.name;
 // console.log(respuesta);
 document.getElementById("myImg").src = selectedword.image;
 
 //obteniendo el id de cuadro 1
-// var cuadro = document.getElementById('cuadro1');
+let cuadro = document.getElementById('cuadro1');
 
 
 // Variables para respuestas
@@ -94,17 +90,13 @@ function verificar(letra) {
 
         // codigo para remover lista y desaparecer el cuadro
 
-        // if (letraActual >= 2) {
-        //     cuadro.classList.remove("cuadros");
-        //     cuadro.classList.add("cuadroTransparente");
-
-        // }
+        if (letraActual >= 2) {
+            cuadro.style.display = "none";
+        }
 
 
         if (letraActual === respuesta.length) {
             // console.log("You win!");
-            // document.getElementById('mensajitowin').style.display = 'block';
-            //  reiniciar();
             finalMessage.innerText = 'Congratulations! You won! 😃';
             popup.style.display = 'flex';
         }
@@ -115,7 +107,7 @@ function verificar(letra) {
 
 
         if (vidas === 0) {
-            // console.log("You lost! Sorry");
+            // console.log("You lose! Sorry");
             // reiniciar();
             finalMessage.innerText = 'Unfortunately you lost. 😕';
             popup.style.display = 'flex';
